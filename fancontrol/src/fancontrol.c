@@ -9,8 +9,8 @@
 #define MAX_TEMP 120
 
 // 定义全局变量
-char thermal_file[MAX_LENGTH] = "/sys/class/thermal/thermal_zone0/temp";      // -T
-char fan_file[MAX_LENGTH] = "/sys/class/hwmon/hwmon0/pwm1";   // -F  <== 仅改这里
+char thermal_file[MAX_LENGTH] = "/sys/devices/virtual/thermal/thermal_zone0/temp";      // -T
+char fan_file[MAX_LENGTH] = "/sys/devices/virtual/thermal/cooling_device0/cur_state";   // -F
 
 int start_speed = 35;   // -s
 int start_temp = 45;    // -t
